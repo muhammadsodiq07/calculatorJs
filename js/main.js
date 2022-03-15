@@ -1,4 +1,4 @@
-let addBtn = document.getElementById("leftBtn");
+let elBtn = document.getElementById("leftBtn");
 let elComponents = document.getElementById("leftmodalID");
 const elOutput = document.getElementById("output");
 const elOnenum = document.getElementById("oneNum");
@@ -33,9 +33,9 @@ const elpercent = document.getElementById("percent");
 const elPower = document.getElementById("power");
 
 
-addBtn.addEventListener("click", ()=>{
+elBtn.addEventListener("click", ()=>{
   elComponents.classList.toggle("display");
-  addBtn.classList.toggle("move-button")
+  elBtn.classList.toggle("move-button")
 })
 
 
