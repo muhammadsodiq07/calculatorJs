@@ -1,0 +1,110 @@
+.main__div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__box {
+  width: 260px;
+  height: 440px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow: hidden;
+}
+
+.main__green {
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(50deg,#58E397, #50DB8E);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.output {
+  display: flex;
+  justify-content: right;
+  font-size: 30px;
+  padding-top: 70px;
+  padding-right: 20px;
+  color: #fff;
+}
+
+.btn {
+  font-size: 24px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: rgba(62, 235, 134, 0.37);
+  }
+}
+
+.leftdiv {
+  background-color: #DFE1E3;
+  width: 65px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.fa-angle-left {
+  color: #fff;
+}
+
+.equals {
+  width: 40px;
+  height: 120px;
+  margin-left: 5px;
+  background: linear-gradient(50deg,#58E397, #50DB8E);
+  border-radius: 50px;
+  z-index: 1;
+  cursor: pointer;
+}
+.btn__numee {
+  height: 100%;
+}
+.fa-equals {
+  font-size: 15px;
+}
+
+.relativ {
+  position: relative;
+  top: -70px;
+}
+
+.relativ2 {
+  position: relative;
+  top: -60px;
+}
+
+
+
+// modal
+
+.leftmddal {
+  width: 0px;
+  position: absolute;
+  right: 0px;
+  top: 130px;
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.4s ease;
+}
+
+.back {
+  background-color: #DFE1E3;
+  height: 310px;
+}
+
+.btn__num1 {
+  font-size: 17px;
+}
+
+.display{
+  opacity: 1;
+  width: 200px;
+  transform: translateX(-0px);
+}
+.move-button{
+  transform: translate(-290%);
+}
