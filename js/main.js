@@ -35,7 +35,7 @@ const elPower = document.getElementById("power");
 
 elBtn.addEventListener("click", ()=>{
   elComponents.classList.toggle("display");
-  elBtn.classList.toggle("move-button")
+  elBtn.classList.toggle("add-btn");
 })
 
 
@@ -74,26 +74,19 @@ elDeletAll.addEventListener("click", () => {
   elOutput.textContent = "";
 });
 
-elDeletOne.addEventListener("click", () => {
-  let num = elOutput.innerHTML.split('').pop()
-  if (num == '-' || num == '+' || num == '/' || num == '*') {
-    elOutput.innerHTML = "";
-  }
-  else if (elOutput.innerHTML < 1) {
-    elOutput.innerHTML = "";
-  }
-  else if (elOutput.innerHTML > 1) {
-    elOutput.innerHTML = (elOutput.innerHTML - num) / 10;
-  }
-})
 
-
-
+elFactor.addEventListener("click",()=>{
+  let temp = 1;
+  for(let i = 1; i <= elOutput.innerHTML; i++){
+    temp *= i;
+  }
+  elOutput.innerHTML= temp;
+} )
 elCheke.addEventListener("click" , () => {
   elOutput.innerHTML = Math.sqrt(elOutput.innerHTML);
 });
 elPi.addEventListener("click" , () => {
-  elOutput.innerHTML = Math.pow(elOutput.innerHTML,2);
+  elOutput.innerHTML = Math.pow(elOutput.innerHTML);
 });
 elSin.addEventListener("click", () => {
   elOutput.innerHTML = Math.sin(elOutput.innerHTML);
@@ -108,10 +101,3 @@ elTan.addEventListener("click", () => {
   elOutput.innerHTML = Math.tan(elOutput.innerHTML);
 })
 
-elFactor.addEventListener("click",()=>{
-  let temp = 1;
-  for(let i = 1; i <= elOutput.innerHTML; i++){
-    temp *= i;
-  }
-  elOutput.innerHTML= temp;
-} )

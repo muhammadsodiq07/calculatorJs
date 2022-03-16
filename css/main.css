@@ -172,7 +172,7 @@ img {
           transform: translateX(0px);
 }
 
-.move-button {
+.add-btn {
   -webkit-transform: translate(-290%);
           transform: translate(-290%);
 }
